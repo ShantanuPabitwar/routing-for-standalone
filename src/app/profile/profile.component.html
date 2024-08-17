@@ -1,0 +1,26 @@
+<ng-container *ngIf="!isChildRouteActive(); else childRouteContent">
+    <mat-card class="profile-card">
+        <mat-card-header>
+          <div mat-card-avatar class="profile-avatar">
+            <mat-icon class="profile-icon me-3" aria-hidden="true">account_circle</mat-icon>
+          </div>
+          <mat-card-title>Shantanu Pabitwar</mat-card-title>
+          <mat-card-subtitle>Full Stack Developer</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Welcome to your profile page. You can edit your information, update your profile, and manage other settings.</p>
+          <div class="d-flex justify-content-between">
+              <button mat-raised-button color="primary" routerLink="edit" class="ml-5">Edit Profile</button>
+              <button mat-raised-button color="accent" routerLink="update">Update Profile</button>
+            <!-- Add more buttons or options as needed -->
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button routerLink="/home">Go to Homepage</button>
+        </mat-card-actions>
+    </mat-card>
+</ng-container>
+
+<ng-template #childRouteContent>
+    <router-outlet></router-outlet>
+</ng-template>

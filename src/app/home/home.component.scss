@@ -1,0 +1,34 @@
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name-highlight {
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.icon-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+}
+
+.circular-icon {
+  font-size: 36px; /* Size of the icons */
+  color: #495057; /* Default icon color */
+  background-color: #e9ecef; /* Background color of the circle */
+  border-radius: 50%; /* Makes the icon circular */
+  padding: 15px; /* Space around the icon */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s, color 0.3s;
+  display: flex; /* Flexbox to center the icon */
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-icon:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* Change icon color on hover */
+}

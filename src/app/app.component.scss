@@ -1,0 +1,47 @@
+/* Navigation Toolbar */
+.nav-toolbar {
+    display: flex;
+    justify-content: center;
+    background-color: #3f51b5; /* Customize primary color */
+    color: white;
+  }
+  
+  .nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    font-size: 1rem;
+    margin: 0 15px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #ffeb3b; /* Customize hover color */
+  }
+  
+  .active-link {
+    border-bottom: 2px solid #ffeb3b; /* Customize active link indicator */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+    }
+  
+    nav a {
+      margin: 10px 0;
+    }
+  }
+  
